@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    color: #323232;
+
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.row{
+    margin: auto;
+    max-width: 1180px;
+    padding: 0 10px;
+}

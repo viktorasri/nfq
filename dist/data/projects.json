@@ -1,0 +1,122 @@
+[
+	{
+		"title":"Yoga and relaxation in Bali",
+		"date":"1-23 June",
+		"price":"1599",
+		"img":{
+			"thumb": "img/products/bali.jpg",
+			"big": "img/products/bali.jpg"
+		},
+		"filtertags":{
+			"country":"Indonesia",
+			"days": "22",
+			"type": "HB"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Egypt welcomes you with its might and magnificent monuments",
+		"date":"3-10 March",
+		"price":"469",
+		"img":{
+			"thumb": "img/products/cairo.jpg",
+			"big": "img/products/cairo.jpg"
+		},
+		"filtertags":{
+			"country":"Egypt",
+			"days": "7",
+			"type": "AI"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Weekend in Rome!",
+		"date":"20-23 March",
+		"price":"200",
+		"img":{
+			"thumb": "img/products/rome.jpg",
+			"big": "img/products/rome.jpg"
+		},
+		"filtertags":{
+			"country":"Italy",
+			"days": "3",
+			"type": "AI"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Meet spring in Barcelona!",
+		"date":"15-23 April",
+		"price":"599",
+		"img":{
+			"thumb": "img/products/barcelona.jpg",
+			"big": "img/products/barcelona.jpg"
+		},
+		"filtertags":{
+			"country":"Spain",
+			"days": "8",
+			"type": "B&B"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Short trip & shoping in Milan!",
+		"date":"1-4 March",
+		"price":"299",
+		"img":{
+			"thumb": "img/products/milan.jpg",
+			"big": "img/products/milan.jpg"
+		},
+		"filtertags":{
+			"country":"Italy",
+			"days": "3",
+			"type": "B&B"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Warm up in capital of the French Riviera",
+		"date":"1-8 April",
+		"price":"800",
+		"img":{
+			"thumb": "img/products/nice.jpg",
+			"big": "img/products/nice.jpg"
+		},
+		"filtertags":{
+			"country":"France",
+			"days": "8",
+			"type": "HB"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Explore Land of Smiles & crystal water wild beaches",
+		"date":"1-8 April",
+		"price":"1959",
+		"img":{
+			"thumb": "img/products/thailand.jpg",
+			"big": "img/products/thailand.jpg"
+		},
+		"filtertags":{
+			"country":"Thailand",
+			"days": "14",
+			"type": "AI"
+		},
+		"sticky": "true"
+	},
+	{
+		"title":"Explore historical Viena",
+		"date":"25-27 February",
+		"price":"1959",
+		"img":{
+			"thumb": "img/products/viena.jpg",
+			"big": "img/products/viena.jpg"
+		},
+		"filtertags":{
+			"country":"Austria",
+			"days": "2",
+			"type": "B&B"
+		},
+		"sticky": "true"
+	}
+]
