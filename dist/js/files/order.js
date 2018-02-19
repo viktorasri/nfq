@@ -27,6 +27,7 @@ function renderOrders(data) {
 		ordersList.insertAdjacentHTML('beforeend',warn)
 		return
 	}
+	data.sort(compare)
 	data.forEach(order=>{
 		let content = `
 						<li class="order hide">
@@ -65,6 +66,14 @@ function findMatchesInOrders(wordToMatch, orders, prop) {
 		order["fullname"] =`${order.name} ${order.lastname}`;
 		return order[prop].match(regex)
 	})
+}
+
+function compare(a,b) {
+	if (a.orderdate < b.orderdate)
+		return 1;
+	if (a.orderdate > b.orderdate)
+		return -1;
+	return 0;
 }
 
 

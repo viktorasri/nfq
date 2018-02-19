@@ -6,7 +6,6 @@ body {
     text-align: center;
     font-family: monospace;
     color: #323232;
-
 }
 
 .clearfix:after {
@@ -20,3 +19,57 @@ body {
     max-width: 1180px;
     padding: 0 10px;
 }
+
+.warn{
+    font-size: 18px;
+    color: $color-blue;
+    margin-bottom: 30px;
+}
+
+
+.pagination {
+    padding-bottom: 30px;
+    button{
+        background-color: #2ed573;
+        color: $color-white;
+        padding: 5px 8px;
+        margin-right: 3px;
+        border: none;
+        i{
+            margin-left: 5px;
+        }
+    }
+}
+
+.hide{
+    display: none!important;
+}
+
+.filters{
+    padding: 20px;
+    text-align: left;
+    h5{
+        color: $color-white;
+        font-size: 18px;
+        margin-bottom: 5px;
+      text-transform: capitalize;
+    }
+    ul{
+        margin-bottom: 15px;
+    }
+    li{
+        display: inline-block;
+        color: $color-white;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    span{
+      color: #aef5f5;
+    }
+}
+
+.menu-active{
+    display: block!important;
+    width: 100%;
+}
+

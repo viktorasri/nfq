@@ -1,0 +1,61 @@
+header{
+  padding: 30px 0;
+  @include mobile{
+    padding: 10px 0;
+  }
+  background-color: $color-header;
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile{
+      flex-wrap: wrap;
+    }
+  }
+  nav{
+    @include mobile{
+      padding: 20px 0;
+      display: none;
+    }
+  }
+  .fa-bars{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    @include mobile{
+      display: block;
+    }
+  }
+
+  img{
+    height: 100px;
+    @include tablet-portrait{
+      height: 70px;
+    }
+    @include mobile{
+      height: 50px;
+    }
+  }
+  li{
+    display: inline-block;
+    margin-left: 20px;
+    @include mobile{
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+  a{
+    color: $color-dark;
+    font-size: 20px;
+    padding-bottom: 5PX;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+    &:hover{
+      color: $color-orange;
+      border-bottom: 2px solid $color-orange;
+    }
+  }
+}

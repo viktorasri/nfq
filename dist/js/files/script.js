@@ -143,3 +143,6 @@ $('.btn-filter').click(function () {
 })
 
 
+$('.mobile-nav').click(function () {
+	$('.main-nav').toggleClass('menu-active')
+})

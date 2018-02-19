@@ -1,0 +1,39 @@
+footer{
+  background-color: $color-footer;
+  color: #ffffff;
+  padding: 30px 0;
+  .row{
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+      flex-wrap: wrap;
+    }
+  }
+  nav{
+    @include mobile{
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .social{
+    @include mobile{
+      display: block;
+      width: 100%;
+    }
+  }
+  li{
+    display: inline-block;
+    cursor: pointer;
+  }
+  nav li{
+    margin-right: 10px;
+  }
+  .social li{
+    margin-left: 10px;
+  }
+  p{
+    display: inline-block;
+    margin: 20px auto 0 auto;
+  }
+}

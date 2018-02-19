@@ -1,32 +1,4 @@
-header{
-  padding: 30px 0;
-  background-color: #323232;
-  .row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-  }
-  img{
-    height: 60px;
-  }
-  li{
-    display: inline-block;
-    margin-left: 20px;
-  }
-  a{
-    color: #ffffff;
-    font-size: 20px;
-    padding-bottom: 5PX;
-    border-bottom: 2px solid transparent;
-
-    transition: .2s;
-    &:hover{
-      color: #ff790f;
-      border-bottom: 2px solid #ff790f;
-    }
-  }
-}
 main{
   background-color: rgb(232, 241, 244);
   .row{
@@ -40,18 +12,49 @@ main{
   .products-header{
     padding: 15px 0;
     margin-bottom: 30px;
-    background-color: #2ed573;
+    background-color: #999999;
+    .row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include tablet-portrait{
+        flex-wrap: wrap;
+      }
+    }
     h1{
       @include h1;
-    }
+      @include tablet-portrait{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+      }
 
+    }
+    .btn-filter{
+      background-color: inherit;
+      color: $color-white;
+      padding: 5px 8px;
+      margin-right: 5px;
+      border: 1px solid $color-white;
+      cursor: pointer;
+    }
+  }
+  .search{
+    padding: 4px 6px;
   }
   .product{
     width: 48%;
     position: relative;
     margin-bottom: 30px;
+    @include tablet-portrait{
+      width: 100%;
+    }
+    @include mobile{
+      margin-bottom: 10px;
+    }
     img{
       width: 100%;
+      filter: brightness(70%);
     }
     .top-product-container{
       position: absolute;
@@ -60,18 +63,32 @@ main{
       top: 20px;
       left: 20px;
       width: 250px;
-      color: #ffffff;
+      color: $color-white;
       display: flex;
       flex-wrap: wrap;
+      font-size: 0;
+      @include tablet-portrait{
+        width: 40%;
+      }
+      @include mobile{
+        width: 50%;
+      }
       &>*{
         font-size: 18px;
         padding: 5px 10px;
         opacity: .95;
+        @include mobile{
+          font-size: 14px;
+          padding: 3px 5px;
+        }
       }
       .country{
         padding: 5px 10px;
-        background-color: rgb(68, 56, 87);
+        background-color: rgb(32, 92, 124);
         width: 60%;
+        @include mobile{
+          padding: 3px 5px;
+        }
       }
       .price{
         width: 40%;
@@ -79,12 +96,14 @@ main{
         i{
           font-size: 14px;
           margin-left: 2px;
-
+          @include mobile{
+            font-size: 12px;
+          }
         }
       }
       .date {
         width: 100%;
-        background-color: #2ed573;
+        background-color: $color-green;
       }
     }
     .title{
@@ -94,19 +113,18 @@ main{
       right: 0;
       padding: 20px 10px;
       background-color: rgba(50, 50, 50, .5);
+      @include mobile{
+        padding: 10px 5px;
+      }
       h3{
-        color: #ffffff;
+        color: $color-white;
         font-size: 20px;
-        //text-align: left;
+        @include mobile{
+          font-size: 16px;
+        }
       }
     }
-
   }
 }
 
 
-footer{
-  background-color: #323232;
-  color: aliceblue;
-  padding: 30px 0;
-}

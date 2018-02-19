@@ -1,5 +1,9 @@
 @mixin h1{
-  color: #ffffff;
+  color: $color-white;
   font-size: 25px;
   line-height: 1.3;
+  @include mobile{
+    font-size: 20px;
+  }
+
 }

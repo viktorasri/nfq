@@ -1,7 +1,7 @@
 <header>
     <div class="row">
         <img src="img/logo.png" alt="logo">
-        <i class="fa fa-bars"></i>
+        <i class="mobile-nav fa fa-bars"></i>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.php">Home</a></li>

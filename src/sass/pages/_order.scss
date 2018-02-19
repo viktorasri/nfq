@@ -1,0 +1,64 @@
+.orders{
+  .orders-header{
+    padding: 15px 0;
+    background-color: #999999;
+    .row{
+      flex-wrap: wrap;
+    }
+    span{
+      display: inline-block;
+      text-align: left;
+      width: 32%;
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      @include mobile{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      input{
+        padding: 5px 8px;
+        width: 150px;
+        @include tablet-portrait{
+          display: block;
+          margin-top: 5px;
+        }
+
+
+      }
+    }
+    h1{
+      @include h1;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+  .listHeading{
+    width: 100%;
+
+  }
+
+  .ordersList{
+    width: 100%;
+
+    li{
+      display: block;
+      padding: 8px 0;
+      &:nth-of-type(2n+1){
+        background-color: #cfcfcf;
+      }
+      span{
+        text-align: left;
+        display: inline-block;
+        width: 32%;
+        @include mobile{
+          display: block;
+        }
+      }
+    }
+  }
+  .pagination{
+    margin-top: 20px;
+  }
+}
